@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formulario de practica de entrega</title>
+        <meta charset ="UTF-8">
+        <link href="estiloWebCarp.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    </head>
+    <!--Aqui -->
+    <body >
+        <a href="\Clase\Lenguaje de marcas\webs html\miWeb\entrega.html">
+            <img class="logo" src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logo.png" alt="No se encuentra la imagen (en construccion)">
+        </a>
+        <a class="flotante" href="#inicio" >
+            <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\flechaTop.gif" width="50" height="50" alt="No se encuentra la imagen (en construccion)" >
+        </a>
+            
+            <h1 class="letraTitulo" id="inicio"><u>BIENVENIDO A NUESTRO FORMULARIO</u></h1> <!--Aqui hemos centrado el titulo de la segunda web-->
+            
+            <table cellspacing="0" cellpadding="0" width=50% class="centradoF" >
+                <caption align="center"> NUEVO CLIENTE </caption>
+                <form>                                            
+                        <tr>
+                            <td><label for="nombre">Nombre: </label></td>
+                            <td><label for="ape1">Primer Apellido: </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="nombre" name="nombre"></td>
+                            <td><input type="text" id="ape1" name="ape1"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ape2"> Segundo Apellido: </label></td>
+                            <td><label for="sex"> Sexo: </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="ape2" name="ape2"></td>
+                            <td>
+                                <input type="radio" id="hombre" name="genero" value="hombre">
+                                <label for ="hombre">Hombre</label>
+                                <input type="radio" id="mujer" name="genero" value="mujer">
+                                <label for ="hombre">Mujer</label>
+                                <input type="radio" id="otro" name="genero" value="otro">
+                                <label for ="hombre">Otro</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for= "mail">correo-electronico: </label></td>
+                            <td><label for= "mail">Repite el correo-electronico: </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type ="text" id="mail" name="mail"></td>
+                            <td><input type ="text" id="mail" name="mail"></td>
+                        </tr>
+                        <tr>
+                            <td><label for= "clave">Contraseña: </label></td>
+                            <td><label for= "clave2">Confirmar Contraseña: </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type ="password" id="clave" name="clave"></td>
+                            <td><input type ="password" id="clave2" name="clave2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for= "tel">Telefono: </label></td>
+                            <td><label for= "telf2">Telefono Secundario: </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type ="tel" id="telf" name="telf"></td>
+                            <td><input type ="tel" id="telf2" name="telf2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for = "tipoId">Tipo de Identificacion</label></td>
+                            <td><label for = "tipoId">Numero de Identificacion</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="aficiones" name="aficiones">
+                                    <option value="dni">DNI/NIF/NIE</option>
+                                    <option value="cif">CIF</option>
+                                    <option value="prt">Cartâo de Cidadâo (Portugal) - 12 caracteres</option>
+                                    <option value="otr">Otro</option>
+                                </select>
+                            </td>
+                            <td><input type ="text" id="nId" name="nId"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label for = "nac">Fecha de nacimiento</label><br> <p>(Te enviaremos un cheque regalo el dia de tu cumpleaños)</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <tr>
+                                        <td><label for = "dia">Dia</label></td>
+                                        <td><label for = "mes">Mes</label></td>
+                                        <td><label for = "anio">Año</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type ="number" id="dia" name="dia"></td>
+                                        <td><input type ="number" id="mes" name="mes"></td>
+                                        <td><input type ="number" id="anio" name="anio"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            
+                        </tr>
+                    
+                </form>    
+            </table><br><br>
+
+
+            <table cellspacing="5" cellpadding="5" width=50% class="centradoF">
+                <form>
+                        <tr>
+                            <td colspan="3">selecciona las modalidad de tu interes:<br></td>                    
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="boton_modalidades" type="button" onclick="alert('Has Seleccionado CarpFishing')"><h2>CarpFishing</h2></button>
+                            </td>
+                            <td><button class="boton_modalidades" type="button" onclick="alert('Has Seleccionado Marina')"><h2>Marina     </h2></button></td>
+                            <td><button class="boton_modalidades" type="button" onclick="alert('Has Seleccionado Lacustre')"><h2>Lacustre   </h2></button></td>
+                        </tr>
+                        <tr >
+                            <td><button class="boton_modalidades" type="button" onclick="alert('Has Seleccionado Arrastre')"><h2>Arrastre   </h2></button></td>
+                            <td><button class="boton_modalidades" type="button" onclick="alert('Has Seleccionado Currican')"><h2>Currican</h2></button></td>
+                            <td><button class="boton_modalidades" type="button" onclick="alert('Has Seleccionado Mano')"><h2>Mano</h2></button></td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="3">
+                                <input type="checkbox" id="terminos" name="terminos">
+                                <label  for ="terminos">Aceptar terminos y condiciones</label>
+                            </td>                    
+                        </tr>
+                        <tr align="center">
+                            <td colspan="3">
+                                <!--boton de donaciones que se incremente de 5 en 5 euros step-->
+                                <label for= "donaciones">Donaciones: </label>
+                                <input type="number" name="donaciones" step="5">
+                            </td>                    
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <input type="submit" value="Crear Cuenta"></button>
+                            </td>
+                            <td>
+                                <input type="reset" value="Borrar"></button>
+                            </td>
+                            <td>
+                                <input type="button" onclick=" location.href='file:/Clase/Lenguaje%20de%20marcas/webs%20html/miWeb/entrega.html' " value="Volver" name="boton" /><!--boton oneclick que nos lleva a nuestra web principal-->
+                            </td>
+                        </tr>                    
+                </form>
+            </table>
+
+            <!--Footers-->
+            <footer class="footer1">                
+                <table cellspacing="0" cellpadding="0" width=50% class="centradoF">
+                    <tr>
+                        <td>
+                            <strong>¿Quieres un 10% de descuento en tu proxima compra? <em class="ptsRojo">*</em></strong><br>
+                            Recibe actualizaciones por correo electronico CARPFISHING.ES<br><br>
+        
+                            <sub>subscribete y enterate de lo ultimo en moda</sub><br>
+                        </td>
+                        <td>
+                            <label for="mail">Newsletter: </label>
+                            <input type="email" name="mail" id="mail" value="EMAIL"><br>
+                            <input type="checkbox" id="terminos" name="terminos">
+                            <label  for ="terminos">Quiero recibir sobre las nobedades y promociones de la web CARPFISHING.ES y acepto la <u>politica de privacidad</u> <em class="ptsRojo">*</em></label>
+                        </td>
+                    </tr>
+                </table>
+            
+        </footer>
+        <footer class="footer2">
+            
+                <table cellspacing="0" cellpadding="0" width=50% class="centradoF">
+                    <tr>
+                        <td><h3>Ayuda y contacto</h3></td>
+                        <td><h3></h3></td>
+                        <td><h3>Tarjetas Regalo</h3></td>
+                        <td><h3>Acerca de CARPFISHING.ES</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Ver todos los temas</td>
+                        <td></td>
+                        <td>Comprar tarjetas regalo</td>
+                        <td>Web corporativa</td>
+                    </tr>
+                    <tr>
+                        <td>Devolver un pedido</td>
+                        <td>Como hacer un pedido</td>
+                        <td>Canjear una tarjeta regalo</td>
+                        <td>Programa partner</td>
+                    </tr>
+                    <tr>
+                        <td>Devolver un articulo partner</td>
+                        <td>Informacion sobre entregas</td>
+                        <td>Tarjetas regalo corporativas</td>
+                        <td>Programa partner</td>
+                    </tr>
+                    <tr>
+                        <td>Seguir tu pedido</td>
+                        <td>-10% si te suscribes a nuestra newsletter</td>
+                        <td></td>
+                        <td>Marketing Services</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Prensa</td>
+                    </tr>
+                </table><br>
+                <table cellspacing="0" cellpadding="0" width=50% class="centradoF">
+                    <tr>
+                        <td>
+                            <h3>
+                                <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\camion.png" width="20" height="20" alt="No se encuentra la imagen (en construccion)">
+                                Nuestros partners
+                            </h3>
+                        </td>
+                        <td><h3>Nuestros metodos de pago</h3></td>
+                        <td><h3>Nuestras ventajas</h3></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>img1 img2 img3 img4 </td>
+                        <td>img1 img2 img3 img4 img5 img6</td>
+                        <td>Devolucion</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Derechos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            
+        </footer>
+        <footer  class="footer3">
+            <table cellspacing="0" cellpadding="0" width=50% class="centradoF">
+                <tr>
+                    <td>
+                        Aviso Legal Terminos y condiciones Proteccion de datos<br>
+                        Configuracion de datos
+                    </td>
+                    <td>
+                        Apps de CARPFISHING:
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\gPlay.png" width="150" height="60" alt="No se encuentra la imagen (en construccion)">
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\appStore.png" width="135" height="45" alt="No se encuentra la imagen (en construccion)">
+                    </td>                        
+                    <td>
+                        Mas inspiracion:<br>
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\icoF.png" width="40" height="40" alt="No se encuentra la imagen (en construccion)">
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\icoIn.png" width="40" height="40" alt="No se encuentra la imagen (en construccion)">
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\icoInsta.png" width="40" height="40" alt="No se encuentra la imagen (en construccion)">
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\icoYT.png" width="40" height="40" alt="No se encuentra la imagen (en construccion)">
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\twitter.png" width="40" height="40" alt="No se encuentra la imagen (en construccion)">
+                        <img src="\Clase\Lenguaje de marcas\webs html\miWeb\imagenes\logos\whatsapp.png" width="40" height="40" alt="No se encuentra la imagen (en construccion)">
+                    </td>
+                </tr>
+            </table>                
+        </footer>
+    </body>
